@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,40 +9,51 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
 
-  <div class="container-made container-sm py-5">
+<body class="bg-dark">
 
-    <h1 class="text-center mb-5">TOPIC</h1>
-
-    <form class="js-form" action="https://echo.htmlacademy.ru" method="GET">
-       <div class="box row">
-
-        <div class="col-lg-4">
-          <input class="js-input form-control col-lg-4 d-block mb-2" type="text" required>
-        </div>
-
-         <div class="col-lg-4">
-           <button class="js-submit btn-danger form-control col-lg-4" type="submit">Submit</button>
-         </div>
-
-        <div class="col-lg-4">
-          <output class="output-wrapper form-control col-lg-4 d-block mb-2">
-            <span>Result: </span>
-            <span class="js-output"></span>
-          </output>
-        </div>
+  <div class="container-lg container-sm py-5">
 
 
+    <div class="result__box border p-3 rounded mb-5 d-flex align-items-center justify-content-between">
+      <h1 class="h2 fw-bold text-uppercase text-white text-left" style="width: 155px;">Rock Paper Scissors</h1>
+
+      <div>
+        <span class="text-success bg-white p-4 border">Your score <span class="my-score"></span></span>
+        <span class="text-danger bg-white p-4 border">Bot score <span class="bot-score"></span></span>
+      </div>
+    </div>
 
 
-       </div>
-    </form>
+    <div class="box row align-items-center">
 
+      <div class="col-lg-12 justify-content-center align-items-center d-flex mb-5">
+        <button class="js-paper btn btn-warning bg-light text-dark rounded-circle p-4 me-4" type="submit"
+          style="border: 10px solid #ffc107;">
+          <img src="img/qog'oz.svg" alt="img qog'oz" width="90" height="90">
+
+        </button>
+        <button class="js-cut btn btn-success bg-light text-dark p-4 rounded-circle me-4" type="submit"
+          style="border: 10px solid #198754;">
+          <img src="img/qaychi.svg" alt="img qaychi" width="90" height="90">
+
+        </button>
+        <button class="js-rock btn btn-danger bg-light text-dark p-4 rounded-circle" type="submit"
+          style="border: 10px solid #dc3545;">
+          <img src="img/quduq.svg" alt="img quduq" width="90" height="90">
+
+        </button>
+      </div>
+
+      <p class="output text-white">
+
+      </p>
+    </div>
 
   </div>
 
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>
